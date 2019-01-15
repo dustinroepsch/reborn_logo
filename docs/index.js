@@ -1,4 +1,5 @@
  function load_canvas() {
-   $("#file-selection-form").hide();
+   $("#photo-selection-submit-button").prop("disabled", true);
+   $("#photo-options").show();
    return false;
 }

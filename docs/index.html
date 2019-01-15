@@ -13,16 +13,28 @@
 </head>
 
 <body>
-    <h1>Reborn Dreams Logo Maker</h1>
-    <div id="file-selection-form">
-        <form onsubmit="return load_canvas()">
-            <div class="form-group">
-                <label for="imageFileInput">Select a photo to add a logo</label>
-                <input type="file" class="form-control-file" id="imageFileInput" accept="image/*" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Realborn Dreams Logo Maker</a>
+    </nav>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Open your photo</h5>
+            <form onsubmit="return load_canvas()">
+                <div class="form-group">
+                    <label for="imageFileInput">Select the photo you want to watermark</label>
+                    <input type="file" class="form-control-file" id="imageFileInput" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="photo-selection-submit-button">Submit</button>
+            </form>
+        </div>
     </div>
+    <div class="card" id="photo-options" style="display: none;">
+        <div class="card-body">
+            <h5 class="card-title">Adjust logo settings</h5>
+
+        </div>
+    </div>
+
 
 
 
