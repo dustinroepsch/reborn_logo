@@ -9,6 +9,10 @@
     <title>Reborn Dreams by Cindy Logo Generator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+
 
 </head>
 
@@ -39,15 +43,21 @@
                             <div class="form-group">
                                 <label for="labelSize">Drag the slider to change the size of the logo</label>
                                 <input disabled type="range" class="form-control-range" id="labelSize" min="0" max="100"
-                                    value="10" step="1" />
+                                    value="10" step="1" oninput="settings_changed()" />
+                                <a href="#" type="button" onclick="download_photo()" class="btn btn-primary" id="downloadButton"
+                                    download="reborn_dreams.png"> Download Photo</a>
                             </div>
                         </form>
                     </div>
                 </div>
 
             </div>
-            <div class="col" id="photoHolder">
-                test
+            <div class="col">
+                <div class="card">
+                    <div class="card-body" id="photoHolder">
+                    </div>
+                </div>
+
             </div>
 
         </div>
