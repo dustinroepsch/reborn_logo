@@ -25,8 +25,8 @@ function add_canvas() {
     canvas = el;
     ctx = el.getContext("2d");
     $("#photoHolder").append(el);
-    $("#labelSize").removeAttr("disabled");
     settings_changed();
+
 }
 
 function open_image() {
