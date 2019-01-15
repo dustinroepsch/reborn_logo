@@ -22,17 +22,36 @@
             <form onsubmit="return load_canvas()">
                 <div class="form-group">
                     <label for="imageFileInput">Select the photo you want to watermark</label>
-                    <input type="file" class="form-control-file" id="imageFileInput" accept="image/*" required>
+                    <input id="formInputPhoto" type="file" class="form-control-file" id="imageFileInput" accept="image/*"
+                        required>
                 </div>
                 <button type="submit" class="btn btn-primary" id="photo-selection-submit-button">Submit</button>
             </form>
         </div>
     </div>
-    <div class="card" id="photo-options" style="display: none;">
-        <div class="card-body">
-            <h5 class="card-title">Adjust logo settings</h5>
+    <div class="container" id="photo-options" style="display: none;">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Adjust logo settings</h5>
+                        <form onsubmit="return false;">
+                            <div class="form-group">
+                                <label for="labelSize">Drag the slider to change the size of the logo</label>
+                                <input disabled type="range" class="form-control-range" id="labelSize" min="0" max="100"
+                                    value="10" step="1" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col" id="photoHolder">
+                test
+            </div>
 
         </div>
+
     </div>
 
 
